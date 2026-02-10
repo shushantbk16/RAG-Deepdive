@@ -1,0 +1,9 @@
+Retrieval Augmented Generation (RAG) is a technique that enhances large language models by retrieving relevant external knowledge before generating responses.
+
+Vector databases store embeddings that capture semantic meaning rather than exact keywords.
+
+BM25 is a ranking function used in information retrieval based on term frequency and inverse document frequency.
+
+Chunking is the process of splitting large documents into smaller pieces to improve retrieval accuracy.
+
+Reranking uses cross-encoder models to score query-document pairs more accurately than vector similarity alone.

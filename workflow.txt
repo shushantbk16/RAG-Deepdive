@@ -1,0 +1,25 @@
+                ┌──────────────┐
+User Query ───▶ │ Query Router │
+                └──────┬───────┘
+                       │
+        ┌──────────────┴──────────────┐
+        │                              │
+ Lexical Retrieval              Semantic Retrieval
+ (BM25 / TF-IDF)                (Vector DB)
+        │                              │
+        └──────────────┬──────────────┘
+                       │
+                  Candidate Pool
+                       │
+                 Cross-Encoder
+                   Reranker
+                       │
+                Top-N Context
+                       │
+              Prompt Construction
+                       │
+                   LLM Call
+                       │
+                Streamed Answer
+                       │
+                 Logging & Eval
